@@ -8,13 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     //Part 3,Task 1
     var stringOne: String = "Red"
     var stringTwo: String = "Blue"
-    //Part 5, Task 1
     var stringThree: String = "cool"
-
+    
+    //Part 5,Task 3
+    @IBOutlet weak var resultLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,24 +24,22 @@ class ViewController: UIViewController {
     }
     
     //Part 3,Task 3
-    @IBAction func changeColorButton(_ sender: Any) {
-        //Part3,Task 4
-        if stringOne = "Blue" {
-            view.backgroundColor = .red
+    @IBAction func changeColor(_ sender: Any) {
+   
+        //Part 3,Task 4
+        if stringOne == "Blue" {
+            view.backgroundColor = UIColor.red
             //Example from class: self.view.backgroundColor = UIColor.red
+            
+            
+            
         } else {
-            view.backgroundColor = .blue
-
+            view.backgroundColor = UIColor.blue
+            //Part 5,Task 3
+            let finalString: String = "\(stringOne) and \(stringTwo) are \(stringThree)"
+            resultLabel.text = finalString
+            
         }
         
-    //Part 5,Task 3
-    @IBOutlet weak var changeColor: UIButton!
-    
-    
-    
-    
-   
-
-
+    }
 }
-
