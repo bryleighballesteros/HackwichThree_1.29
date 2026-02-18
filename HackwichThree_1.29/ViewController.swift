@@ -17,6 +17,9 @@ class ViewController: UIViewController {
     //Part 5,Task 3
     @IBOutlet weak var resultLabel: UILabel!
     
+  
+    @IBOutlet weak var firstLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,7 +35,6 @@ class ViewController: UIViewController {
             //Example from class: self.view.backgroundColor = UIColor.red
             
             
-            
         } else {
             view.backgroundColor = UIColor.blue
             //Part 5,Task 3
@@ -42,4 +44,8 @@ class ViewController: UIViewController {
         }
         
     }
+    
+    
+    
+
 }
